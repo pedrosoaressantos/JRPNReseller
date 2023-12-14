@@ -1,0 +1,687 @@
+@charset "UTF-8";
+
+/* Folder font */
+@font-face {
+    src: url(../font/Inconsolata.ttf);
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Paleta
+Base color: #7FFFD4
+Lighter tone: #8FCCB8
+Medium tone: #8A9994
+Darkest tone: #47665C
+Highlight: #1A332A
+*/
+
+html {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+}
+
+/* ============================= 1 - Body style start here ============================= */
+body {
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #47665C;
+}
+.all-main-container {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1280px;
+}
+
+/* ============================= Section titles ============================= */
+h1, h2, h3, h4, h5, h6 {letter-spacing: 5px;}
+
+/* ============================= 2 - Header style ============================= */
+/* ============================= 2.1 - Menu bar ============================= */
+.nav-item > a {
+    color: #8A9994;
+}
+
+.title-bar {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    font-family: "Times New Roman", Georgia, Serif;
+    letter-spacing: 4px;
+    padding: 15px;
+}
+
+.company-name {
+    background: linear-gradient(90deg, rgba(143,204,184,1) 0%, rgba(255,255,255,1) 50%, rgba(127,255,212,1) 100%);
+    color: #1A332A;
+    box-shadow: 0 0 5px #1A332A;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Add shadow on hover*/
+.title-bar a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ============================= End[2] Header style ============================= */
+
+/* ============================= 3 - Main style ============================= */
+
+/*3.2 - Container | Div class="about-container"*/
+
+main {
+    padding-top: 6em;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.main-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 0.5em;
+    text-align: center;
+    height: 100%;
+}
+
+.main-page > div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjusts the image to completely cover the container */
+}
+
+.aboutCompany {
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 5px 5px 0px 5px;
+}
+.about-img {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px #1A332A;
+}
+
+.aboutCompany > p {
+    font-size: 1.1rem;
+    padding: 2px;
+    text-indent: 2em;
+}
+
+.title-about {
+    text-align: center;
+}
+
+.title-about-h2 {
+    font-weight: bold;
+    font-size: 5vw;
+    padding-bottom: 30px;
+    color: #8FCCB8;
+    text-shadow: 0px 4px 6px #8A9994;
+}
+
+em {
+    color: #8FCCB8;
+}
+
+.title-about-h5 {
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 20px 0 20px 0;
+    text-shadow: 0px 1px 2px #47665C;
+}
+
+.title-about-h5,
+strong {
+    color: #1A332A;
+}
+
+/* ============================= End[3.2] - Container | Div class="about-container" ============================= */
+
+/* ============================= PRODUCTS Container ============================= */
+/*Products*/
+
+.products-container {
+    padding: 10px;
+}
+
+.product-title,
+.feedback-container h2,
+.form-container h2 {
+    margin: 0 8vw;
+    padding: 2vw;
+}
+
+.our-product {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* .product {
+    Full sintaxe flex: [flex-grow] [flex-shrink] [flex-basis]
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 2px 5px #8FCCB8;
+    background-color: #1B3409;
+} */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; /* Full sintaxe flex: [flex-grow] [flex-shrink] [flex-basis] */
+    max-width: 300px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 2px 5px #8FCCB8;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+/* Sets the order of the product-price div */
+.product-price {order: 1;}
+
+/* Sets the order of the btn-products div */
+.btn-products {order: 2;}
+
+.product-img-container {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Space between image and product name */
+}
+
+.product-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.pdesc {font-weight: bold;}
+
+/* ============================= End PRODUCTS Container ============================= */
+
+/* ============================= End[3] - Main style =============================*/
+
+/* ============== ALL BUTTONS ============== */
+/* Font for all buttons */
+button {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* .bttIndex {margin-bottom: 0 auto;} */
+
+/*Configuration Contact, Order, and Feedback button.*/
+.bttIndex,
+.btnContact,
+.btnFeedback,
+.bttOrderPage,
+.clearCartButton,
+.bttGoToProduct {
+    background-color: #47665C;
+    color: #8FCCB8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #8A9994;
+}
+
+.order-clear-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+/* ============== ALL INPUTS - SELECT - TEXTAREA ============== */
+
+.jrp-form {
+    /* background-color: #8FCCB8; */
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #7FFFD4;
+    padding: 5px;
+}
+
+fieldset label {
+    display: block;
+    /* background-color: red; */
+}
+
+form {
+    padding: 10px;
+    background-color: #8FCCB8;
+}
+
+/* ============================= ORDER/CONTACT ============================= */
+
+/* Main Container [Order | Contact | Feedback] */
+.payment,
+.contact-information,
+.feedback-form-container {
+    padding: 1vw 5vw 5vw 5vw;
+}
+
+/* ============== Empty Cart Section ============== */
+#emptyCartSection {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+#emptyCartSection > p {
+    padding: 30px 0 30px 0;
+    color: #8A9994;
+}
+
+.emptyBag {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.emptyBagImg{
+    width: 100%;
+    height: auto;
+}
+
+/* ============== Full Cart Section ============== */
+
+/* Container [Order | Contact | Feedback] */
+#productDetailsSection,
+.contact-form,
+.feedback-container,
+.form-container {
+    text-align: left;
+    /* border: 1px solid #8FCCB8; */
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5vw;
+}
+
+/* Div 1 */
+/* [Order and Contact] */
+.selectedproduct,
+.contact {
+    display: flex; /* Used to build flexbox. Flex can build one dimension layout which is better than float based layout. */
+    flex-direction: column;
+    align-items: center;
+}
+
+.productBag {
+    height: 15vw;
+}
+
+#productImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#productDescription {
+    margin: 0 15vw 1vw 15vw;
+}
+
+#productDescription,
+#productPrice {
+    font-size: 1rem;
+}
+
+/* Div 2 */
+.payment-form {
+    padding: 1vw;
+}
+
+#number-of-pens {
+    width: 60px;
+}
+
+#payment-method {
+    width: 160px;
+}
+
+.number-of-pens-container,
+.payment-method-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-container-other-fields {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.address-container-other-fields > div {
+    width: 30%; /* Each div occupies 30% of the width */
+}
+
+.quantity-pMethod-container,
+.name-cardNumber-container {grid-template-columns: 1fr;}
+.cvv-expireDate-container {grid-template-columns: 1fr 1fr;}
+
+.quantity-pMethod-container,
+.name-cardNumber-container,
+.cvv-expireDate-container,
+.first-last-name,
+.email-container {
+    display: grid;
+    grid-gap: 10px;
+}
+
+#expiry-date, #cvv {width: 70px;}
+
+/* ============================= End of ORDER Container ============================= */
+
+/* ============================= CONTACT ============================= */
+.contact > h4 {
+    padding: 0 5px 25px 5px;
+}
+
+.contact-bottom-container {
+    background-color: #8FCCB8;
+    color: #1A332A;
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding-top: 2vw;
+}
+
+.formcontact {
+    padding: 1vw;
+}
+
+.first-last-name {
+    grid-template-columns: 1fr minmax(10px, auto);
+}
+
+.email-container {
+    grid-template-columns: 1fr 1fr minmax(10px, auto);
+}
+
+.emailAddressLabel {
+    grid-row: 1;
+}
+
+.emailAddressInput,
+.asterisk-contact {
+    grid-row: 2;
+}
+
+.emailAddressInput {
+    grid-column: span 2;
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.phone-label {
+    margin-bottom: 1px; /* Space between "Phone" and the group of inputs */
+}
+
+.phone-number-group {
+    display: flex;
+    align-items: center;
+}
+
+.span-asterisk {
+    color: red;
+    font-weight: bold;
+    align-self: flex-start; /* For the asterisk to be at the top of the container if it is flex. */
+}
+
+/* Configuration Link */
+.club-shield-name a:link {
+    color: #1B3409;
+}
+
+.club-shield-name a:visited {
+    color: #9BD770;
+}
+
+.club-shield-name a:hover {
+    color: #1B3409;
+    background-color: #9BD770;
+}
+
+.club-shield-name a:active {
+    color: #1B3409;
+    font-weight: bold;
+}
+
+.club-shield-name:hover {
+    color: #1B3409;
+    background-color: #9BD770;
+}
+
+/* Style for all a elements */
+.contact a {
+    color: #7FFFD4;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    font-weight: normal;
+}
+
+/* ============================= End of CONTACT ============================= */
+
+/* ============================= FEEDBACK ============================= */
+.product-title h2,
+.feedback-container h2,
+.form-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.feedback-container h2,
+.form-container h2 {
+    color: #7FFFD4;
+    text-shadow: 2px 2px 3px #1A332A;
+}
+
+.feedback-item h3 {
+    font-size: 1em;
+    color: #1A332A;
+}
+
+.feedback-item {
+    border: 1px solid #7FFFD4;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* ============================= End of FEEDBACK Container ============================= */
+
+/*The text-decoration property is mostly used to remove underlines from links:*/
+
+a:link {
+    text-decoration: none; /* a normal, unvisited link*/
+}
+
+a:visited {
+    text-decoration: none; /* a link the user has visited*/
+}
+
+a:hover {
+    text-decoration: none; /* a link when the user mouses over it*/
+}
+
+a:active {
+    text-decoration: none; /* a link the moment it is clicked*/
+}
+
+/* ============================= FOOTER ============================= */
+.footer-nav {
+    text-align: center;
+    /* color: #000; */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Bottom of the footer */
+.footer-bottom {
+    background-color: #1A332A;
+    padding: 1em;
+    font-family: 'Inconsolata', monospace;
+}
+
+.footer-bottom, .footer-bottom a {
+    color: #7FFFD4;
+    text-decoration: none;
+}
+
+/*Add shadow on hover*/
+.footer-bottom a:hover {
+    box-shadow: 0 0 5px #8A9994;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#socialMedia > a {
+    color: #47665C;
+}
+
+#socialMedia > a:hover {
+    color: #1A332A;
+}
+
+/* ============================= End FOOTER ============================= */
+
+::selection {
+    background-color: #7FFFD4;
+}
+
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+    .main-page {grid-template-columns: 1fr 1fr;}
+
+/* ============================= ORDER Container ============================= */
+.quantity-pMethod-container,
+.name-cardNumber-container,
+.cvv-expireDate-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+.number-of-pens-container,
+.payment-method-container {
+    flex-direction: row;
+    align-items: center;
+}
+/* ============================= End of ORDER Container ============================= */
+
+
+/* ============================= CONTACT Container ============================= */
+.first-last-name {
+    grid-template-columns: 1fr minmax(10px, auto) 1fr minmax(10px, auto);
+}
+/* ============================= End CONTACT Container ============================= */
+}
+
+/* ============================= SLIDE STYLE ============================= */
+
+.slider {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Label and div */
+.manual-navigation,
+.navigation-auto {
+    position: absolute;
+    width: 100vw;
+    margin-top: 65vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* Label and div */
+.manual-btn,
+.navigation-auto div {
+    border: 2px solid #8FCCB8;
+    padding: 0.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Add space between selectors */
+.manual-btn:not(:last-child), .navigation-auto div:not(:last-child) {margin-right: 2vw;}
+
+.manual-btn:hover {background-color: #8FCCB8;}
+
+/* If it is active and is the first, it must start on the first slide. */
+#radio1:checked ~ .first {margin-left: 0;}
+
+#radio2:checked ~ .first {margin-left: -25%;}
+
+#radio3:checked ~ .first {margin-left: -50%;}
+
+#radio4:checked ~ .first {margin-left: -75%;}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #8FCCB8;
+}
+
+/* For slide in large screen */
+@media (min-width: 804px) {
+    /* Label and div */
+    .manual-navigation,
+    .navigation-auto {
+        width: 800px;
+        margin-top: 530px;
+    }
+
+    /* Label and div */
+    .manual-btn,
+    .navigation-auto div {
+        padding: 5px;
+        transition: 1s;
+    }
+}
+/* ============================= END SLIDE STYLE ============================= */
