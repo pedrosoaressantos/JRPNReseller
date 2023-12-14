@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This tag contains information such as metadata, links to styles, scripts,
+    and other elements that are not directly displayed on the page. -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character set used in the document -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controls page scaling and rendering -->
+
+    <!-- Provides a brief description of the page content. Used by search engines. -->
+    <meta name="description" content="Neutrogena product reseller store">
+
+    <!-- Information about the site's authors/owners. -->
+    <meta name="author" content="Josiane Souza">
+    <meta name="author" content="Pedro Soares">
+    <meta name="author" content="Roselane Santos">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <title> JRP - Neutrogena Reseller </title>
+
+</head>
+
+<body>
+
+    <!-- Page-level header - MENU-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg title-bar"> <!-- fixed-top -->
+            <div class="container">
+                <!-- Company name -->
+                <a class="navbar-brand company-name" href="index.html">JRP - Neutrogena Reseller</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation menu -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-items">
+                        <li class="nav-item"><a class="nav-link menu-items menu-item1" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link menu-items menu-item4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link menu-items menu-item2" href="products.html">Product</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-items menu-item3" href="order.html">Bag</a></li>
+                        <li class="nav-item"><a class="nav-link menu-items menu-item5" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-items menu-item5" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="all-main-container">
+        <div class="contact-information">
+            <div class="contact">
+                <h4>Contact Information:</h4>
+                <p>Feel free to reach out to us for any inquiries or feedback:</p>
+                <!-- To redirect with the pre-filled email address. -->
+                <a href="mailto:contact@jrpreseller.com">contact@jrpreseller.com</a>
+                <p>+1 (234) 567-8901</p>
+                <p>123 Beauty Street, Cleanville, Brazil</p>
+
+                <!-- Social media icons -->
+                <div id="socialMedia">
+                    <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Second part | Contact form -->
+            <div class="contact-form">
+                <form action="post" class="formcontact">
+                    <fieldset>
+                        <h4>Send us a message</h4>
+
+                        <!-- First and Last name -->
+                        <div class="first-last-name">
+                            <input type="text" class="jrp-form" name="fname" id="fname" placeholder="First Name"
+                                required>
+                            <span class="span-asterisk">*</span>
+                            <input type="text" class="jrp-form" name="lname" id="lname" placeholder="Last Name"
+                                required>
+                            <span class="span-asterisk">*</span>
+                        </div>
+
+                        <br>
+
+                        <!-- Email -->
+                        <div class="email-container">
+                            <label for="emailAddress" class="emailAddressLabel">Email</label>
+                            <input type="email" class="jrp-form emailAddressInput" name="emailAddress" id="emailAddress"
+                                placeholder="example@example.com" required>
+                            <span class="span-asterisk asterisk-contact">*</span>
+                        </div>
+
+                        <br>
+
+                        <!-- 3 Inputs for phone -->
+                        <div class="phone-container">
+                            <label class="phone-label">Phone</label>
+                            <div class="phone-number-group">
+                                <input type="tel" class="jrp-form" name="phone1" id="phone1" size="1" maxlength="3"
+                                    placeholder="###" required>
+                                <span>-</span>
+                                <input type="tel" class="jrp-form" name="phone2" id="phone2" size="1" maxlength="3"
+                                    placeholder="###" required>
+                                <span>-</span>
+                                <input type="tel" class="jrp-form" name="phone3" id="phone3" size="2" maxlength="4"
+                                    placeholder="####" required>
+                                <span class="span-asterisk">*</span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <fieldset>
+                            <legend>Message <span class="span-asterisk">*</span></legend>
+                            <textarea class="jrp-form" name="message" id="message" cols="30" rows="5"
+                                required></textarea>
+                        </fieldset>
+
+                        <div class="btn-submit">
+                            <button name="submit" type="submit" class="btnContact">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <div class="contact contact-bottom-container" id="contact">
+                <h4>Contact Information</h4>
+                <p>Feel free to reach out to us for any inquiries or feedback:</p>
+                <!-- To redirect with the pre-filled email address. -->
+                <a href="mailto:contact@jrpreseller.com">contact@jrpreseller.com</a>
+                <p>+1 (234) 567-8901</p>
+                <p>123 Beauty Street, Cleanville, Brazil</p>
+
+                <!-- Social media icons -->
+                <div id="socialMedia">
+                    <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a>
+                <span>|</span>
+                <a href="about/terms-of-use.php" title="Learn more about our terms of use">Terms of Use</a>
+                <p><small>&copy; JRP - Neutrogena Reseller Inc. 2023</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

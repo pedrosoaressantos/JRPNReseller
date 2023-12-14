@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This tag contains information such as metadata, links to styles, scripts,
+    and other elements that are not directly displayed on the page. -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Defines the character set used in the document -->
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Controls page scaling and rendering -->
+
+  <!-- Provides a brief description of the page content. Used by search engines. -->
+  <meta name="description" content="Neutrogena product reseller store">
+
+  <!-- Information about the site's authors/owners. -->
+  <meta name="author" content="Josiane Souza">
+  <meta name="author" content="Pedro Soares">
+  <meta name="author" content="Roselane Santos">
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+  <title> JRP - Neutrogena Reseller </title>
+
+</head>
+
+<body>
+
+  <!-- Page-level header - MENU-->
+  <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg title-bar"> <!-- fixed-top -->
+      <div class="container">
+        <!-- Company name -->
+        <a class="navbar-brand company-name" href="index.html">JRP - Neutrogena Reseller</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation menu -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-items">
+            <li class="nav-item"><a class="nav-link menu-items menu-item1" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link menu-items menu-item4" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link menu-items menu-item2" href="products.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link menu-items menu-item3" href="order.html">Bag</a></li>
+            <li class="nav-item"><a class="nav-link menu-items menu-item5" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link menu-items menu-item5" href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page-level main content -->
+  <main class="all-main-container">
+    <div class="feedback-form-container">
+      <!--Section with previously provided feedback-->
+      <section class="feedback-container">
+        <h2>Feedbacks</h2>
+        <article class="feedback-item">
+
+          <h3>Josiane</h3>
+          <p>
+            "I'm absolutely delighted with the experience of skincare with the Neutrogena products.
+            Every since I was able to buy in Toronto, I couldn't stop using them. My skin gets so bright and alive.
+            . ★★★★★
+          </p>
+        </article>
+
+        <article class="feedback-item">
+          <h3>Pedro</h3>
+          <p>
+            "I recently purchased a sunscreen, and it's simply outstanding. My skin is not dry or stained and I feel
+            really protected against UV rays.
+            . ★★★★★
+          </p>
+        </article>
+
+        <article class="feedback-item">
+          <h3>Roselane</h3>
+          <p>
+            "I bought a Body Lotion for my daughter who is having some issues with dry skin and
+            the product has been doing miracles. I have never seen something like that before! Thank you Neutrogena &
+            JRP
+            for making this dream come true.". ★★★★★
+          </p>
+        </article>
+      </section>
+
+      <hr>
+
+      <!--Form for Feedback-->
+      <section class="form-container">
+        <h2>Leave your feedback</h2>
+
+        <form action="#" method="post" id="feedbackForm">
+          <div>
+            <label for="username">Name:</label>
+            <input type="text" class="jrp-form" id="username" name="username" placeholder="Your name" required>
+            <!-- Obligation-->
+          </div>
+
+          <div>
+            <label for="rating">Rating:</label>
+            <select class="jrp-form" id="rating" name="rating" required>
+              <option value="">Select a rating</option>
+              <option value="1">★☆☆☆☆</option>
+              <option value="2">★★☆☆☆</option>
+              <option value="3">★★★☆☆</option>
+              <option value="4">★★★★☆</option>
+              <option value="5">★★★★★</option>
+            </select>
+          </div>
+
+          <hr>
+
+          <div>
+            <fieldset>
+              <legend>Feedback</legend>
+              <textarea class="jrp-form" id="feedback" name="feedback" rows="4" required></textarea>
+            </fieldset>
+          </div>
+
+          <br>
+          <button type="submit" id="bttFeedback" class="btnFeedback">Submit</button>
+        </form>
+      </section>
+    </div>
+    <!--End of Form-->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <div class="contact contact-bottom-container" id="contact">
+        <h4>Contact Information</h4>
+        <p>Feel free to reach out to us for any inquiries or feedback:</p>
+        <!-- To redirect with the pre-filled email address. -->
+        <a href="mailto:contact@jrpreseller.com">contact@jrpreseller.com</a>
+        <p>+1 (234) 567-8901</p>
+        <p>123 Beauty Street, Cleanville, Brazil</p>
+
+        <!-- Social media icons -->
+        <div id="socialMedia">
+          <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a>
+        <span>|</span>
+        <a href="about/terms-of-use.php" title="Learn more about our terms of use">Terms of Use</a>
+        <p><small>&copy; JRP - Neutrogena Reseller Inc. 2023</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
